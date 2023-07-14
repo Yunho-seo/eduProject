@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+
+<div th:fragment="header">
+    <div style="display: flex; align-items: center;">
+        <a href="/thymeleaf/main">
+            <img style="margin:10px 50px; align-self: flex-start;" src="/images/logo1.png" width="100px" height="auto">
+        </a>
+            <h2 style="margin: 5px; text-align: center; flex-grow: 1; text-align: center;"> 모델 검증 페이지 / Model Verified Page </h2>
+        <div style="margin: 10px 50px; align-self: flex-start; width: 100px; height: 70px; background-color: #ffffff;"></div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/thymeleaf/main"> Model Varified </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">메인페이지로</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/home_model">모델 검증</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+</html>
