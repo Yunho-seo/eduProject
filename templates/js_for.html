@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{%  block explain_contents %}
+
+<p id="demo"></p>
+<p id="datedisplay"></p>
+<button onclick="displayDate()"> 시간을 알려주오! </button>
+
+<script language="Javascript">
+function displayDate(){
+    document.getElementById("datedisplay").innerHTML=Date();
+}
+// 객체를 생성
+var person = {firstName:"서", lastName:"윤호", age:23, eyecolor:"blue"};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+Back = new Array("{{ url_for('static', filename='img1.jpg')}}", "{{ url_for('static', filename='img2.png')}}", "{{ url_for('static', filename='img3.png')}}", "{{ url_for('static', filename='img4.png')}}", "{{ url_for('static', filename='img5.jpg')}}");
+    index = Math.floor(Math.random() * 5);
+    document.write("<body background=" + Back[index] + ">");
+    // document.write("<body background=" + "{{url_for('static', filename='" + Back[index] + "')}}>");
+    // document.write("<body background= {{ url_for('static', filename='img1.jpg')}}>");
+    document.write("<b>접속할 때마다 다른 그림이 나타나게 하기...!<br>");
+    document.write("새로고침을 여러 번 해보세요....!");
+</script>
+{% endblock explain_contents %}

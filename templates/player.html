@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{%  block explain_contents %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+  <h2>선수단 Player</h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='1.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">로베르트 산체스</h4>
+      <p class="card-text">골키퍼, 잘 못막는다.</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='2.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">루이스 덩크</h4>
+      <p class="card-text">수비수, 브라이튼의 주장</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='3.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">알렉시스 맥 알리스터</h4>
+      <p class="card-text">미드필더, 잘 뛴다.</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='4.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">대니 웰벡</h4>
+      <p class="card-text">공격수, 공격을 못한다.</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='5.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">미토마 카오루</h4>
+      <p class="card-text">공격수, 드리블이 세계 최고 수준이다.</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{{ url_for('static', filename='6.jpg')}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">에반 퍼거슨</h4>
+      <p class="card-text">공격수, 2004년생 유망주이다.</p>
+    </div>
+  </div>
+  <br>
+
+  {%  endblock explain_contents %}

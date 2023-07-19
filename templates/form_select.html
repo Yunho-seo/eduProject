@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block explain_contents %}
+<p id="demo"> 변화 </p>
+
+<script language="Javascript">
+    function chk() {
+        index = myForm.myColor.selectedIndex;
+        myForm.txt1.value = index;
+        myForm.txt2.value = myForm.myColor.options[index].value;
+        myForm.txt3.value = myForm.myColor.options[index].text;
+        document.body.style.background = myForm.myColor.options[index].value;
+    }
+</script>
+
+<form name = "myForm">
+    선택된 Index = <input type="text" name="txt1" size="10"><br>
+    선택된 Value = <input type="text" name="txt2" size="10"><br>
+    선택된 Text  = <input type="text" name="txt3" size="10"><br>
+    배경색 선택하기
+    <select name="myColor" size="1" onclick="chk()">
+        <option value="red"> 빨간색 </option>
+        <option value="blue"> 파란색 </option>
+        <option value="green"> 초록색 </option>
+        <option value="white" selected> 흰색 </option>
+        <option value="yellow"> 노란색 </option>
+        <option value="pink"> 핑크색 </option>
+    </select><br>
+    아이템 추가 : <input type="text" name="txt4" size="10">
+                 <input type="button" value="아이템 추가" onclick="Append()">
+</form>
+<script>
+    function Append(){
+        cnt = myForm.myColor.length;
+        str = myForm.txt4.value;
+        myOption = new Option(str);     // 동적 메모리 할당
+        myForm.myColor.options[cnt] = myOption;
+    }
+</script>
+{%  endblock explain_contents %}

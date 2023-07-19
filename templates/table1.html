@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{%  block explain_contents %}
+<CENTER>
+    <b> 멋진 골로 '파스칼 그로스(Pascal Gross)' 선수의 골이 선정되었습니다^^</b>
+    <table border="10" bordercolor="black" cellpadding="20" cellspacing="10" width="300"
+            height="200" bgcolor="magenta">
+        <tr>
+            <td align="center" valign="center" background="b2.gif">
+                <img src = "{{ url_for('static', filename="goal.gif")}}" width="700" height="500" border="3">
+            </td>
+        </tr>
+    </table>
+</CENTER>
+{% endblock explain_contents %}

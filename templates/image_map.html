@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{%  block explain_contents %}
+
+<img src = "{{ url_for('static', filename='brighton.jpg')}}" width="300" height="300">
+<img src = "{{ url_for('static', filename='brighton.jpg')}}" width="300" height="300" border=0 usemap="#ss">
+
+<map name="ss">
+    <area shape="rect" coords = "10,10 90,90" href="https://www.brightonandhovealbion.com/" alt="홈페이지"
+    target="_blank">
+    <area shape="circle" coords = "140,115 50" href="https://www.brightonandhovealbion.com/" alt="홈페이지">
+    <area shape="ploy" coords = "230,10 180,190" href="https://www.brightonandhovealbion.com/" alt="홈페이지">
+</map>
+
+{%  endblock explain_contents %}
