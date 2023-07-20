@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template, redirect
 from flask import session
+from PIL import Image
 import os
 import pickle
-import torch
+import torchvision.transforms as transforms
 
 app = Flask(__name__)
 
