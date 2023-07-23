@@ -28,7 +28,7 @@ public class FormController {
 
     @PostMapping("/upload")
     public String handleFileUpload(@RequestParam(value="image", required=false) MultipartFile multipartFile, Model model) throws IOException {
-        String flaskAppUrl = "http://localhost:5000"; // 플라스크 서버 URL
+        String flaskAppUrl = "http://localhost:5000/upload"; // 플라스크 서버 URL
 
         // 플라스크 서버로 전송할 요청 헤더 설정
         HttpHeaders headers = new HttpHeaders();
